@@ -1,4 +1,4 @@
-function MM_RRE()
+function RRE_MM()
     % Constants
     vol = 1e-15;
     n_A = 6.023e23;
