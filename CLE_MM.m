@@ -17,10 +17,6 @@ function CLE_MM()
     tic;
     % CLE simulation
     while t < tfinal
-        %tau to not exceed tfinal
-        if t + tau > tfinal
-            tau = tfinal - t;
-        end
         
         % Evaluate propensities
         a = [c(1)*X(1)*X(2)   % S+E->ES
