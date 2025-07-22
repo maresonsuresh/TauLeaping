@@ -1,3 +1,3 @@
 # TauLeaping
 
-Code used for Tau Leaping Research
+Code used for Tau Leaping Work
