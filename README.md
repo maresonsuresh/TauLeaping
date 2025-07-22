@@ -1,3 +1,3 @@
 # TauLeaping
 
-Code used in my Tau Leaping for Stiff Systems notes
+Code used for Implicit Tau Leaping Research
