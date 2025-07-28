@@ -1,0 +1,37 @@
+% JONES OSCILLATORY MODEL
+c = [
+    1.7475e-9,     % γ
+    1e7,           % λ
+    1.6,           % a
+    1.349e14,      % K
+    1.7437e-10,    % k
+    0.01,          % d
+    0.7,           % δ
+    0.07,          % μ
+    0.195,         % α
+    13,            % c
+    285,           % N
+    4.11           % Nc
+];
+% Stoichiometric matrix V (5 species x 11 reactions)
+V = [ -1   0   0   0   0   0   0   0   0   0   0;   % A
+       0   0   0   0   0   0   0   0  -1   0   1;   % CC
+       0   0   0   1   1  -1  -1   0   0   0   0;   % T
+       0   0   0   0   0   1   0  -1   0   0  -1;   % T*
+       0   1   1   0   0   0   0   0   0  -1   0];  % V
+X = [
+    4.015e13;     % A
+    1.88e7;       % T
+    3.23e8;       % T*
+    7.8e6;        % CC
+    1.2e5         % V
+];
+tfinal = 250;      
+epsilon = 0.03;    
+delta = 0.05;     
+Ncrit = 10;         
+Nstiff = 100;   
+SSAfactor = 10;   
+SSAsteps = 100; 
+
+% >>jonesadaptivetau(X, V, c, tfinal, epsilon, delta, Ncrit, Nstiff, SSAfactor, SSAsteps)
